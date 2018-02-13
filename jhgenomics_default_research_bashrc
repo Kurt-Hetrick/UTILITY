@@ -51,11 +51,9 @@ set -o noclobber
 ##### module loading section for bright cluster management #####
 ################################################################
 
-# I put this at the end b/c I am declaring SGE_ROOT for the non-bright managed SGE above.
-# but this conflicts with bright managed SGE_ROOT
-# so adding load module sge at the end will overwrite SGE_ROOT that would be correct for bright
+# I don't think I need to set /usr/bin, /bin, etc
 
-# going to replace anaconda with one that I've compiled
+# eventually going to replace anaconda with one that I've compiled
 module load anaconda-python/2.7.12
 module load java/1.8.0_112
 module load datamash/1.1.0
@@ -74,7 +72,7 @@ module load sublime_text/3.3143
 
 # these two are core modules for using bright, so I'm putting these last
 module load sge/2011.11p1
-# both the CC and CCX variables should really be exported within the gcc module, but I'm not doing that today
+# both the CC and CXX variables should really be exported within the gcc module, but I'm not doing that today
 module load gcc/5.1.0
 
 
