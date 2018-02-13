@@ -4,7 +4,7 @@
 
 # Default queue when not specified
 
--q prod.q
+-q rnd.q,bigmem.q
 
 # Minimum free resources required when submitting a job
 
