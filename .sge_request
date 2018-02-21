@@ -20,3 +20,7 @@
 # tell sge to export the users environment variables
 
 -V
+
+# set qlogin to keep trying to login (no timeout)...this is actually the default for qsub
+
+-now n
